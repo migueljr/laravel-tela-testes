@@ -33,6 +33,11 @@
     
 @endsection
 
+@section('footer')
+    @component('checkout.components.footer')
+    @endcomponent
+@endsection
+
 
 @push('styles')
     <style>

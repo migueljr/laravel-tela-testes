@@ -15,7 +15,7 @@
                 </div>
             </span>
             <span style="width:40%;font-size:13px;white-space:nowrap;">
-                    <span class="rounded" style="background-color:black;padding:4px;color:white;font-size:10px;position:absolute;margin-top:-22px;margin-left:0px;">10% de desconto</span> 
+                    <span class="rounded" style="background-color:black;padding:4px;color:white;font-size:10px;position:absolute;margin-top:-25px;margin-left:0px;">10% de desconto</span> 
                     BOLETO BANCARIO
                 </span>
             <span style="width:50%;font-size:10px;" class="flex justify-end">
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="flex flex-col form-group">
-                    <button style="font-size:16px; background-color:#10C300;" class="btn-default">PAGAR 12 x de R$ 14,99</button>
+                    <button style="font-size:16px; background-color:#10C300;" class="btn-default"><b>PAGAR</b> 12 x de R$ 14,99</button>
                 </div>
                 
             
