@@ -130,5 +130,8 @@
         @yield('head')
         @yield('content')
         @yield('footer')
+
+
+        @stack('scripts')
     </body>
 </html>

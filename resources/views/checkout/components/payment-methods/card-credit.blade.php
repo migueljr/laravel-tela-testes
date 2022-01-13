@@ -51,7 +51,17 @@
 
                 <div class="flex flex-col form-group">
                     <label>Número do Cartão</label>
-                    <input placeholder="0000 0000 0000 0000" class="input-default" type="text" autocomplete="off" />
+                    <input
+                        id="card-input"
+                        style="
+                            background-image:url(./images/payment.svg);
+                            background-repeat:no-repeat; 
+                            background-size: 40px 30px;
+                            background-position: left; 
+                            padding-left: 50px;
+                            background-position-x: 5px;
+                        "
+                        placeholder="0000 0000 0000 0000" class="input-default" type="text" autocomplete="off" />
                     <span class="label-error">Error</span>
                 </div>
 
@@ -105,3 +115,44 @@
     </div>
 
 </div>
+
+
+
+@push('scripts')
+    <script>
+        var cartoes = {
+            Visa: /^4[0-9]{12}(?:[0-9]{3})/,
+            Mastercard: /^5[1-5][0-9]{14}/,
+            Amex: /^3[47][0-9]{13}/,
+            DinersClub: /^3(?:0[0-5]|[68][0-9])[0-9]{11}/,
+            Discover: /^6(?:011|5[0-9]{2})[0-9]{12}/,
+            JCB: /^(?:2131|1800|35\d{3})\d{11}/
+        };
+
+        function testarCC(nr) {
+            if(nr.slice(0,1)=='3') return 'America'
+            if(nr.slice(0,1)=='4') return 'Visa'
+            if(nr.slice(0,1)=='6') return 'Elo'
+            if(parseInt(nr.slice(0,2))>=51 && parseInt(nr.slice(0,2))<=55 || parseInt(nr.slice(0,4))>=2221 && parseInt(nr.slice(0,4))<=2720) return 'Master'
+        }
+        document.querySelector('#card-input').addEventListener('keyup', ()=>{
+            console.log(testarCC(document.querySelector('#card-input').value, cartoes))
+            if(testarCC(document.querySelector('#card-input').value)=='Visa'){
+                document.querySelector('#card-input').style.backgroundImage = 'url(./images/visa.png)'
+            }else if(testarCC(document.querySelector('#card-input').value)=='Master'){
+                document.querySelector('#card-input').style.backgroundImage = 'url(./images/master.svg)'
+            }
+            else if(testarCC(document.querySelector('#card-input').value)=='Elo'){
+                document.querySelector('#card-input').style.backgroundImage = 'url(./images/elo.jpeg)'
+            }
+            else if(testarCC(document.querySelector('#card-input').value)=='America'){
+                document.querySelector('#card-input').style.backgroundImage = 'url(./images/america.png)'
+            }
+            else{
+                document.querySelector('#card-input').style.backgroundImage = 'url(./images/payment.svg)'
+            }
+            
+        })
+
+    </script>
+@endpush
