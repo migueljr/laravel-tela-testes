@@ -52,6 +52,7 @@
 
             .justify-end{
                 justify-content:end;
+                justify-content:flex-end;
             }
 
             .items-end{
