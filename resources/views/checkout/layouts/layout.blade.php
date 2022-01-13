@@ -62,6 +62,10 @@
                 justify-content:start;
             }
 
+            .justify-between{
+                justify-content:space-between;
+            }
+
             .items-start{
                 align-items:start;
             }
@@ -74,6 +78,10 @@
                 color:black;
                 color:#666666;
                 /*background-color:#FEECEF;*/
+            }
+
+            .input-default-select{
+                height:46px !important;
             }
             
             .input-default-error{

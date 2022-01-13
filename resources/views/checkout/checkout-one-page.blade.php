@@ -7,10 +7,20 @@
 @endsection
 
 @section('content')
+
     <div id="content" class="flex justify-center" style="gap:20px;">
-        <div id="content-checkout-one-page" class="rounded bg-white flex justify-center" style="padding:20px;">
-            @component('checkout.components.personal-data')
-            
+        <div id="content-checkout-one-page" class="rounded bg-white flex justify-center flex-col" style="padding:20px; gap:40px;">
+
+            @component('checkout.components.personal-data')  
+            @endcomponent
+
+            @component('checkout.components.delivery-address')
+            @endcomponent
+
+            @component('checkout.components.shipping-methods')
+            @endcomponent
+
+            @component('checkout.components.payment-methods')
             @endcomponent
 
         </div>
