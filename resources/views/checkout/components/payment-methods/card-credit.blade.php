@@ -32,7 +32,7 @@
             </div>
 
             <div class="flex items-center" style="gap:5px;">
-                <img style="width:276px;" src="./images/cards.png" />
+                <img width="276" height="26" src="./images/cards.png" />
             </div>
 
 
