@@ -28,7 +28,7 @@
             
             <div class="flex items-center" style="gap:5px;">
                 <span style="color:#666666;font-size:13px;">Pagamento Processado por</span>
-                <img style="width:90px;" src="./images/mercado-pago-logo.png" />
+                <img width="90" height="23" src="./images/mercado-pago-logo.png" />
             </div>
 
             <div class="flex items-center" style="gap:5px;">
