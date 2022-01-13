@@ -11,7 +11,7 @@
         <form>
             <div class="flex flex-col form-group">
                 <label>CEP</label>
-                <input placeholder="00000-000" class="input-default" type="text" autocomplete="off" />
+                <input onkeypress="mascara(this, cep)" maxlength="9" placeholder="00000-000" class="input-default" type="text" autocomplete="off" />
                 <span class="label-error">Error</span>
                 <span style="font-size:13px;font-weight:400;color:#666666;margin-top:10px;">
                     Para calcular o frete é necessário preenche todos os campos acima.
@@ -25,7 +25,7 @@
             <div class="flex" style="gap:10px;">
                 <div class="flex flex-col form-group" style="width:40%;">
                     <label>Número</label>
-                    <input placeholder="0000" class="input-default" type="text" autocomplete="off" />
+                    <input onkeypress="mascara(this, soNumeros)" maxlength="4"  placeholder="0000" class="input-default" type="text" autocomplete="off" />
                     <span class="label-error">Error</span>
                 </div>
                 <div class="flex flex-col form-group" style="width:60%;">
@@ -104,4 +104,41 @@
             
         }
     </style>
+@endpush
+
+@push('scripts')
+    <script>
+
+        function mascara(o,f){
+            v_obj=o
+            v_fun=f
+            setTimeout("execmascara()",1)
+        }
+        function execmascara(){
+            v_obj.value=v_fun(v_obj.value)
+        }
+        function leech(v){
+            v=v.replace(/o/gi,"0")
+            v=v.replace(/i/gi,"1")
+            v=v.replace(/z/gi,"2")
+            v=v.replace(/e/gi,"3")
+            v=v.replace(/a/gi,"4")
+            v=v.replace(/s/gi,"5")
+            v=v.replace(/t/gi,"7")
+            return v
+        }
+        function soNumeros(v){
+            return v.replace(/\D/g,"")
+        }
+
+        function cep(v){
+            v=v.replace(/D/g,"")                //Remove tudo o que não é dígito
+            v=v.replace(/^(\d{5})(\d)/,"$1-$2") //Esse é tão fácil que não merece explicações
+            return v
+        }function soNumeros(v){
+            return v.replace(/\D/g,"")
+        }
+
+
+    </script>
 @endpush
