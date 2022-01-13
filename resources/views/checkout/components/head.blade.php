@@ -1,4 +1,8 @@
 <section id="top" style="display:flex;justify-content:center;flex-direction:column; align-items:center; gap:15px;background-color: white;">
+    
+    @component('checkout.components.resume-cart-mobile')
+    @endcomponent
+
     <div id="bar-security-mobile" style="width:100%;height:36px;background-color:#10C300;font-size:12px; gap:10px;">
         <span style="font-weight:700;">COMPRA SEGURA</span>
         <span 
