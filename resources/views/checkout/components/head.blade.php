@@ -61,6 +61,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
+            <span id="notify-cart">10</span>
         </div>
     </div>
 
@@ -73,15 +74,16 @@
 
 
 @push('styles')
-    <style>
-        
-    </style>
 
     <style>
         
         #cart-mobile svg{
             min-width:30px;
             height:30px;
+            color:#666666;
+        }
+
+        #cart-mobile{
             display:none;
         }
 
@@ -101,14 +103,25 @@
         }
         #bar-logo{margin-top:15px;width:1024px;}
 
+        #notify-cart{
+            background-color:#F30168;
+            padding:4px;
+            color:white;
+            border-radius:100%;
+            font-size:13px;
+            position:absolute;
+            margin-top:-10px;
+            margin-left:-10px;
+        }
+
         @media (min-width: 768px) and (max-width: 1023px)
         {
             #cart-mobile{order:2;}
             #logo-sucurity-desktop{order:1;}
-            #cart-mobile svg{display:block;}
+            #cart-mobile{display:block;}
             #bar-security-mobile{display: flex;}
             #logo-sucurity-desktop{visibility:hidden;}
-            
+
             #bar-logo{margin-top:15px;width:768px;}
         }
 
@@ -116,7 +129,7 @@
         {
             #cart-mobile{order:2;}
             #logo-sucurity-desktop{order:1;}
-            #cart-mobile svg{display:block;}
+            #cart-mobile{display:block;}
             #bar-security-mobile{display: flex;}
             #logo-sucurity-desktop{visibility:hidden;}
 
@@ -128,7 +141,7 @@
         {
             #cart-mobile{order:2;}
             #logo-sucurity-desktop{order:1;}
-            #cart-mobile svg{display:block;}
+            #cart-mobile{display:block;}
             #bar-security-mobile{display: flex;}
             #logo-sucurity-desktop{visibility:hidden;}
 
