@@ -13,7 +13,7 @@
             <form>
                 <div class="flex flex-col form-group">
                     <label>Primeiro Nome</label>
-                    <input placeholder="Informe seu primeiro nome" class="input-default" type="text" />
+                    <input placeholder="Informe seu primeiro nome" class="input-default" type="text" autocomplete="off" />
                     <span class="label-error">Error</span>
                 </div>
 
@@ -53,6 +53,9 @@
 
 @push('styles')
     <style>
+        ::placeholder{
+            color:#d0d0d0;
+        }
         #personal-data{
             width:661px;
             margin-top:15px;

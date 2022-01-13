@@ -67,6 +67,7 @@
                 border:1px solid #d0d0d0;
                 padding:2px 10px;
                 color:black;
+                color:#666666;
                 /*background-color:#FEECEF;*/
             }
             
