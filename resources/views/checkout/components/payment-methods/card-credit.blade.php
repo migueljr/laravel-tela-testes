@@ -56,9 +56,14 @@
                 </div>
 
                 <div class="flex" style="gap:10px;">
-                    <div class="flex flex-col form-group" style="width:20%;">
+                    <div class="flex flex-col form-group" style="width:30%;">
                         <label style="white-space:nowrap;">Validade (Mês/Ano):</label>
-                        <input class="input-default" type="text" autocomplete="off"/> 
+                        <select  class="input-default input-default-select" type="text" autocomplete="off"> 
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                        </select>
                         <span class="label-error">Error</span>
                     </div>
                     <div class="flex flex-col form-group" style="width:40%;">
@@ -71,7 +76,7 @@
                         </select>
                         <span class="label-error">Error</span>
                     </div>
-                    <div class="flex flex-col form-group" style="width:40%;">
+                    <div class="flex flex-col form-group" style="width:30%;">
                         <label>CVV:</label>
                         <input  class="input-default" type="text" autocomplete="off"/> 
                         <span class="label-error">Error</span>
