@@ -17,18 +17,18 @@
 
         @media (min-width: 768px) and (max-width: 1023px)
         {
-            #resume-cart{margin-top:5px;width:85%;flex-grow: 1;}
+            #resume-cart{display:none;}
         }
 
         @media (min-width: 576px) and (max-width: 767.98px)
         {
-            #resume-cart{margin-top:5px;width:85%;flex-grow: 1;}
+            #resume-cart{display:none;}
         }
         
 
         @media (max-width: 575px)
         {
-            #resume-cart{margin-top:5px;width:85%;flex-grow: 1;}
+            #resume-cart{display:none;}
         }
     </style>
 @endpush

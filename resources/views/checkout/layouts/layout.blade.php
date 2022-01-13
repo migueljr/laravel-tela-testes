@@ -6,11 +6,16 @@
 
         <title>Laravel</title>
 
+        {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap" rel="stylesheet"> --}}
+
         <style>
             *{
                 padding:0px;
                 margin:0px;
                 font-family: Arial;
+                /*font-family: 'Nunito', sans-serif;*/
             }
 
             body{
@@ -106,33 +111,8 @@
                 opacity:0.4;
             }
 
-            #bar-security-mobile{display: none;}
-            #bar-logo{margin-top:15px;width:1024px;}
-
-            @media (min-width: 768px) and (max-width: 1023px)
-            {
-                #bar-logo{margin-top:15px;width:768px;}
-            }
-
-            @media (min-width: 576px) and (max-width: 767.98px)
-            {
-                #bar-logo{margin-top:15px;width:100%;}
-            }
             
 
-            @media (max-width: 575px)
-            {
-                #bar-security-mobile
-                {
-                    display: flex;
-                    justify-content:center;
-                    align-items:center;
-                    text-align:center;
-                    color:white;
-                }
-                #logo-sucurity-desktop{visibility:hidden;}
-                #bar-logo{margin-top:0px;width:100%;}
-            }
         </style>
 
         @stack('styles')

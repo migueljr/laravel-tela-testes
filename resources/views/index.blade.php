@@ -27,7 +27,7 @@
                     text-align:center;
                     color:white;
                 }
-                #logo-sucurity-desktop{visibility:hidden;}
+                #logo-sucurity-desktop{display:none;}
                 #bar-logo{margin-top:0px;}
             }
         </style>
