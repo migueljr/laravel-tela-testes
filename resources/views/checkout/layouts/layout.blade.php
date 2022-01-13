@@ -65,7 +65,7 @@
                 height:40px;
                 border-radius:5px;
                 border:1px solid #d0d0d0;
-                padding:2px 10px;
+                padding:2px 20px;
                 color:black;
                 color:#666666;
                 /*background-color:#FEECEF;*/
