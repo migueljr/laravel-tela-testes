@@ -83,6 +83,7 @@
 
             .input-default-select{
                 height:46px !important;
+                background-color:white;
             }
             
             .input-default-error{
