@@ -96,6 +96,7 @@
             <div style="width:100%;background-color:#F30168;height:71px; color:white; font-weight:700; font-size:14px; display:flex; justify-content:center;align-items:center;text-align:center;">
                 <span style="padding:10px;">
                     Você ganhou frete grátis para essa compra e 12 sem juros para finalizar sua compra agora.
+
                 </span>
             </div>
         </section>
