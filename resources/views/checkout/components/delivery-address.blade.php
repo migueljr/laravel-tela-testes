@@ -2,7 +2,7 @@
 <div id="delivery-address">
     <div class="flex flex-col" style="gap:5px;">
         <div class="flex" style="gap:10px;">
-            <img src="./images/shipping.svg" />
+            <img width="28" height="20" src="./images/shipping.svg" />
             <div class="flex flex-col" style="color:#666666;">
                 <span style="font-size:14px;font-weight:700;">ENDEREÇO DE ENTREGA</span>
                 <span style="font-size:13px;font-weight:400;">Agora precisamos do seu endereço para entrega. </span>

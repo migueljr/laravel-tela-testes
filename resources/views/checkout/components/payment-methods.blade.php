@@ -2,7 +2,7 @@
 <div id="payment-methods">
     <div class="flex flex-col" style="gap:20px;">
         <div class="flex" style="gap:10px;">
-            <img src="./images/payment.svg" />
+            <img width="28" height="20" src="./images/payment.svg" />
             <div class="flex flex-col" style="color:#666666;">
                 <span style="font-size:14px;font-weight:700;">FORMAS DE PAGAMENTO</span>
                 <span style="font-size:13px;font-weight:400;">Para finalizar seu pedido escolha uma forma de pagamento </span>
