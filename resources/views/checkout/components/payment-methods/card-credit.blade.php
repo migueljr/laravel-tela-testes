@@ -60,7 +60,7 @@
                             background-repeat:no-repeat; 
                             background-size: 40px 30px;
                             background-position: left; 
-                            padding-left: 50px;
+                            padding-left: 65px;
                             background-position-x: 5px;
                         "
                         placeholder="0000 0000 0000 0000" class="input-default" type="text" autocomplete="off" />
