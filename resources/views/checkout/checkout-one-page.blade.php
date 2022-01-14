@@ -8,7 +8,15 @@
 
 @section('content')
 
-    <div id="content" class="flex justify-center" style="gap:20px;">
+
+    <div class="flex justify-center" style="gap:10px;">
+        @component('checkout.components.timer')  
+        @endcomponent
+    </div>
+
+    <div id="content" class="flex justify-center" style="gap:10px;">
+        
+
         <div id="content-checkout-one-page" class="rounded bg-white flex justify-center flex-col" style="padding:20px; gap:40px;">
 
             @component('checkout.components.personal-data')  
@@ -20,16 +28,20 @@
             @component('checkout.components.shipping-methods')
             @endcomponent
 
+            @component('checkout.components.order-bump')
+            @endcomponent
+
             @component('checkout.components.payment-methods')
             @endcomponent
 
         </div>
         @component('checkout.components.resume-cart')
+        @endcomponent
     </div>
 
     
     
-    @endcomponent
+    
     
 @endsection
 

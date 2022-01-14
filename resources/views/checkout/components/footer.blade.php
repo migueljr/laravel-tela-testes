@@ -1,4 +1,4 @@
-<section id="footer" style="display:flex;justify-content:center;flex-direction:column; align-items:center; gap:10px;color:#666666;font-size:13px;">
+<section id="footer" style="display:flex;justify-content:center;flex-direction:column; align-items:center; gap:10px;color:#666666;font-size:13px;margin-top:20px;">
     <span>NOME DA LOJA - CNPJ: 00.000.000/0001-00</span>
     <span>suporte@site.com.br - Whatsapp: (00) 0000-0000</span>
     <span>
