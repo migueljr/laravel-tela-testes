@@ -9,9 +9,11 @@
 @section('content')
 
 
-    <div class="flex justify-center" style="gap:10px;">
-        @component('checkout.components.timer')  
-        @endcomponent
+    <div id="timer-mobile" class="flex justify-center" style="gap:10px;">
+        <div style="width:85%;">
+            @component('checkout.components.timer')  
+            @endcomponent
+        </div>
     </div>
 
     <div id="content" class="flex justify-center" style="gap:10px;">
@@ -56,6 +58,8 @@
         #content-checkout-one-page{width:661px;}
         #content-checkout-one-page{margin-top:15px;}
 
+        #timer-mobile{ display:none; }
+
         @media (min-width: 768px) and (max-width: 1023px)
         {   
             #content{
@@ -63,6 +67,7 @@
                 align-items:center;
             }
             #content-checkout-one-page{margin-top:15px;width:85%;}
+            #timer-mobile{ display:flex; }
 
         }
 
@@ -74,6 +79,8 @@
             }
             #content-checkout-one-page{margin-top:15px;width:85%;}
 
+            #timer-mobile{ display:flex; }
+
         }
         
 
@@ -84,6 +91,8 @@
                 align-items:center;
             }
             #content-checkout-one-page{margin-top:15px;width:85%;}
+
+            #timer-mobile{ display:flex; }
         }
     </style>
 @endpush
@@ -158,23 +167,25 @@
 
         function changeCanUnlockSubmit(){
 
-                console.log(form["first_name"] && form["first_name"].length)
-                console.log(form["last_name"] && form["last_name"].length)
-                console.log(form["email"] && form["email"].length) 
-                console.log(form["phone"] && form["phone"].length)
-                console.log(form["doc"] && form["doc"].length) 
-                console.log(form["postal_code"] && form["postal_code"].length) 
-                console.log(form["address_line_1"] && form["address_line_1"].length) &&
-                console.log(form["address_neighborhood"] && form["address_neighborhood"].length) 
-                console.log(form["state"] && form["state"].length) 
-                console.log(form["city"] && form["city"].length) 
-                console.log(form["card_name"] && form["card_name"].length) 
-                console.log(form["card_doc"] && form["card_doc"].length) 
-                console.log(form["card_number"] && form["card_number"].length) 
-                console.log(form["card_month"] && form["card_month"].length) 
-                console.log(form["card_year"] && form["card_year"].length) 
-                console.log (form["cvv"] && form["cvv"].length) 
-                console.log(form["card_installments"] && form["card_installments"].length)
+                console.log('first_name', form["first_name"] && form["first_name"].length)
+                console.log('last_name', form["last_name"] && form["last_name"].length)
+                console.log('email', form["email"] && form["email"].length) 
+                console.log('phone', form["phone"] && form["phone"].length)
+                console.log('doc', form["doc"] && form["doc"].length) 
+                console.log('postal_code', form["postal_code"] && form["postal_code"].length) 
+                console.log('address_line_1', form["address_line_1"] && form["address_line_1"].length)
+                console.log('address_neighborhood', form["address_neighborhood"] && form["address_neighborhood"].length) 
+                console.log('state', form["state"] && form["state"].length) 
+                console.log('city', form["city"] && form["city"].length) 
+                console.log('card_name', form["card_name"] && form["card_name"].length) 
+                console.log('card_doc', form["card_doc"] && form["card_doc"].length) 
+                console.log('card_number', form["card_number"] && form["card_number"].length) 
+                console.log('card_month', form["card_month"] && form["card_month"].length) 
+                console.log('card_year', form["card_year"] && form["card_year"].length) 
+                console.log('cvv', form["cvv"] && form["cvv"].length) 
+                console.log('card_installments', form["card_installments"] && form["card_installments"].length)
+
+                console.log('..........................')
             
                if(
                     (form["first_name"] && form["first_name"].length) &&

@@ -4,40 +4,55 @@
     <div class="wrapper">
       <div id="slides" class="slides">
         <span class="slide">
-          <h5 style="text-align:center;">
+          <span class="flex justify-end" style="width:100%;">
+            <svg class="close-order-bump" style="width:20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </span>
+          <h5 style="text-align:center;font-size: 14px;font-weight: 700;color: #666666;">
             PARABÉNS VOCÊ TEM UMA OFERTA ESPECIAL
           </h5>
-          <p style="text-align:center;">
+          <p style="text-align:center;text-align:center;font-size: 14px;font-weight: 400;color: #666666;">
             Mensagem oferecendo o produto determinada pelo lojista no ato do cadastro
           </p>
-          <img style="width:100px;border-radius:5px;" src="https://a-static.mlcdn.com.br/618x463/bicicleta-aro-29-mountain-bike-caloi-velox-freio-v-brake-21-marchas/magazineluiza/224968700/f8e8eac41c5d1b42ccac9cc345008608.jpg" alt="">
+          <img style="width:100px;border-radius:5px; margin-top:5px;" src="https://a-static.mlcdn.com.br/618x463/bicicleta-aro-29-mountain-bike-caloi-velox-freio-v-brake-21-marchas/magazineluiza/224968700/f8e8eac41c5d1b42ccac9cc345008608.jpg" alt="">
           <span style="text-decoration: line-through;">R$ 120,00</span>
           <span>R$ 80,00</span>
-          <button style="padding:8px 8px;color:white;background-color:black;border-radius:5px;">COMPRAR JUNTO</button> 
+          <button style="padding:8px 8px;color:white;background-color:black;border-radius:5px;cursor: pointer;">COMPRAR JUNTO</button> 
         </span>
         <span class="slide">
-          <h5 style="text-align:center;">
+          <span class="flex justify-end" style="width:100%;">
+            <svg class="close-order-bump" style="width:20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </span>
+          <h5 style="text-align:center;font-size: 14px;font-weight: 700;color: #666666;">
             PARABÉNS VOCÊ TEM UMA OFERTA ESPECIAL
           </h5>
-          <p style="text-align:center;">
+          <p style="text-align:center;text-align:center;font-size: 14px;font-weight: 400;color: #666666;">
             Mensagem oferecendo o produto determinada pelo lojista no ato do cadastro
           </p>
-          <img style="width:100px;border-radius:5px;" src="https://a-static.mlcdn.com.br/618x463/bicicleta-aro-29-mountain-bike-caloi-velox-freio-v-brake-21-marchas/magazineluiza/224968700/f8e8eac41c5d1b42ccac9cc345008608.jpg" alt="">
+          <img style="width:100px;border-radius:5px; margin-top:5px;" src="https://a-static.mlcdn.com.br/618x463/bicicleta-aro-29-mountain-bike-caloi-velox-freio-v-brake-21-marchas/magazineluiza/224968700/f8e8eac41c5d1b42ccac9cc345008608.jpg" alt="">
           <span style="text-decoration: line-through;">R$ 120,00</span>
           <span>R$ 80,00</span>
-          <button style="padding:8px 8px;color:white;background-color:black;border-radius:5px;">COMPRAR JUNTO</button> 
+          <button style="padding:8px 8px;color:white;background-color:black;border-radius:5px;cursor: pointer;">COMPRAR JUNTO</button> 
         </span>
         <span class="slide">
-          <h5 style="text-align:center;">
+          <span class="flex justify-end" style="width:100%;">
+            <svg class="close-order-bump" style="width:20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </span>
+          <h5 style="text-align:center;font-size: 14px;font-weight: 700;color: #666666;">
             PARABÉNS VOCÊ TEM UMA OFERTA ESPECIAL
           </h5>
-          <p style="text-align:center;">
+          <p style="text-align:center;text-align:center;font-size: 14px;font-weight: 400;color: #666666;">
             Mensagem oferecendo o produto determinada pelo lojista no ato do cadastro
           </p>
-          <img style="width:100px;border-radius:5px;" src="https://a-static.mlcdn.com.br/618x463/bicicleta-aro-29-mountain-bike-caloi-velox-freio-v-brake-21-marchas/magazineluiza/224968700/f8e8eac41c5d1b42ccac9cc345008608.jpg" alt="">
+          <img style="width:100px;border-radius:5px; margin-top:5px;" src="https://a-static.mlcdn.com.br/618x463/bicicleta-aro-29-mountain-bike-caloi-velox-freio-v-brake-21-marchas/magazineluiza/224968700/f8e8eac41c5d1b42ccac9cc345008608.jpg" alt="">
           <span style="text-decoration: line-through;">R$ 120,00</span>
           <span>R$ 80,00</span>
-          <button style="padding:8px 8px;color:white;background-color:black;border-radius:5px;">COMPRAR JUNTO</button> 
+          <button style="padding:8px 8px;color:white;background-color:black;border-radius:5px;cursor: pointer;">COMPRAR JUNTO</button> 
         </span>
       </div>
     </div>
@@ -46,9 +61,9 @@
   </div>
 
   <div id="map" style="display:flex;gap:10px;position:absolute; margin-top:350px;z-index:99;width:400px;justify-content:center;">
-      <div style="width:10px;height:10px; border-radius:100%; background-color:blue;"></div>
-      <div style="width:10px;height:10px; border-radius:100%; background-color:blue;"></div>
-      <div style="width:10px;height:10px; border-radius:100%; background-color:blue;"></div>
+      <div style="width:10px;height:10px; border-radius:100%; background-color:transparent;border:1px solid #FAC444;"></div>
+      <div style="width:10px;height:10px; border-radius:100%; background-color:transparent;border:1px solid #FAC444;"></div>
+      <div style="width:10px;height:10px; border-radius:100%; background-color:transparent;border:1px solid #FAC444;"></div>
   </div>
   
 </div>
@@ -123,7 +138,6 @@
         padding:10px;
         width: var(--width);
         height: var(--height);
-        cursor: pointer;
         display: flex;
         flex-direction: column;
         align-items:center;
@@ -179,12 +193,23 @@
         .next:active {
         transform: scale(.8);
         }
+
+        .close-order-bump{
+          cursor:pointer;
+        }
     </style>
 @endpush
 
 
 @push('scripts')
     <script>
+
+    document.querySelectorAll(".close-order-bump").forEach(item=>{
+      item.addEventListener('click', ()=>{
+        console.log('ok')
+        document.querySelector('#order-bump').style.display = 'none'
+      })
+    })
     /*
         document.documentElement.style.setProperty('--width', document.querySelector('#content-checkout-one-page').offsetWidth-10+'px');
         window.addEventListener('resize', ()=>{
@@ -260,7 +285,7 @@
             items.style.left = (items.offsetLeft - posX2) + "px";
         }
         
-        document.querySelector('#map').children[index].style.backgroundColor = 'red'
+        document.querySelector('#map').children[index].style.backgroundColor = '#FAC444'
         //console.log(index)
         
         function dragEnd (e) {
@@ -278,18 +303,18 @@
             
             Array.from(document.querySelector('#map').children).forEach((item, i)=>{
                     if(index==i){
-                item.style.backgroundColor = 'red'
+                item.style.backgroundColor = '#FAC444'
             }
             else{
                 if(index==slidesLength){
-                document.querySelector('#map').children[0].style.backgroundColor = 'red'
-                document.querySelector('#map').children[slidesLength-1].style.backgroundColor = 'blue'
+                document.querySelector('#map').children[0].style.backgroundColor = '#FAC444'
+                document.querySelector('#map').children[slidesLength-1].style.backgroundColor = 'transparent'
                 }else{
                     if(index==-1){
-                    document.querySelector('#map').children[slidesLength-1].style.backgroundColor = 'red'
-                    document.querySelector('#map').children[0].style.backgroundColor = 'blue'
+                    document.querySelector('#map').children[slidesLength-1].style.backgroundColor = '#FAC444'
+                    document.querySelector('#map').children[0].style.backgroundColor = 'transparent'
                 }else{
-                    item.style.backgroundColor = 'blue'
+                    item.style.backgroundColor = 'transparent'
                 }
                 }
                 
