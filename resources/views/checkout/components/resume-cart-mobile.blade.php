@@ -9,7 +9,7 @@
             display:none;
         "
         >
-            <div class="flex justify-start flex-col" style="padding:20px;">
+            <div id="resume-cart-mobile-content" class="flex justify-start flex-col">
                 <div>
                     <h3 style="font-weight:700;font-size:14px;color:#666666;margin-bottom:15px !important;">SEU CARRINHO</h3>
 
@@ -98,7 +98,22 @@
 
      @push('styles')
         <style>
-            document.querySelector()
+            
+             @media (min-width: 768px) and (max-width: 1023px)
+            {
+                 #resume-cart-mobile-content{padding:20px 100px;}
+            }
+
+            @media (min-width: 576px) and (max-width: 767.98px)
+            {
+                  #resume-cart-mobile-content{padding:20px 100px;}
+            }
+            
+
+            @media (max-width: 575px)
+            {
+                 #resume-cart-mobile-content{padding:20px;}
+            }   
         </style>
     @endpush
 

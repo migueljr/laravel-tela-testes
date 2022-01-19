@@ -11,50 +11,53 @@
         <form>
             <div class="flex flex-col form-group">
                 <label>CEP</label>
-                <input onkeypress="mascara(this, cep)" maxlength="9" placeholder="00000-000" class="input-default" type="text" autocomplete="off" />
-                <span class="label-error">Error</span>
-                <span style="font-size:13px;font-weight:400;color:#666666;margin-top:10px;">
+                <input onkeypress="mascara(this, cep)" required maxlength="9"  name="postal_code" placeholder="00000-000" class="input-default" type="text" autocomplete="off" />
+                <span name="postal_code_label_error" class="label-error">Error</span>
+                <span id="label-next-step-postal-code" style="font-size:13px;font-weight:400;color:#666666;margin-top:10px;">
                     Para calcular o frete é necessário preenche todos os campos acima.
                 </span>
             </div>
-            <div class="flex flex-col form-group">
-                <label>Endereço</label>
-                <input placeholder="Informe seu endereço sem número" class="input-default" type="text" autocomplete="off" />
-                <span class="label-error">Error</span>
-            </div>
-            <div class="flex" style="gap:10px;">
-                <div class="flex flex-col form-group" style="width:40%;">
-                    <label>Número</label>
-                    <input onkeypress="mascara(this, soNumeros)" maxlength="4"  placeholder="0000" class="input-default" type="text" autocomplete="off" />
-                    <span class="label-error">Error</span>
+            
+            <div id="delivery-address-next">
+                <div class="flex flex-col form-group">
+                    <label>Endereço</label>
+                    <input required minlength="5" placeholder="Informe seu endereço sem número" name="address_line_1" class="input-default" type="text" autocomplete="off" />
+                    <span name="address_line_1_label_error" class="label-error">Error</span>
                 </div>
-                <div class="flex flex-col form-group" style="width:60%;">
-                    <label>Complemento</label>
-                    <input placeholder="Apartamento, casa, loja.." class="input-default" type="text" autocomplete="off" />
-                    <span class="label-error">Error</span>
+                <div class="flex" style="gap:5px;">
+                    <div class="flex flex-col form-group" style="width:40%;">
+                        <label>Número</label>
+                        <input onkeypress="mascara(this, soNumeros)" maxlength="4" name="address_number"  placeholder="0000" class="input-default" type="text" autocomplete="off" />
+                        <span class="label-error">Error</span>
+                    </div>
+                    <div class="flex flex-col form-group" style="width:60%;">
+                        <label>Complemento</label>
+                        <input placeholder="Apartamento, casa, loja.." name="address_line_2" class="input-default" type="text" autocomplete="off" />
+                        <span class="label-error">Error</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="flex flex-col form-group">
-                <label>Bairro</label>
-                <input placeholder="Informe seu bairro" class="input-default" type="text" autocomplete="off" />
-                <span class="label-error">Error</span>
-            </div>
-
-            <div class="flex" style="gap:10px;">
-                <div class="flex flex-col form-group" style="width:50%;">
-                    <label>Estado</label>
-                    <select class="input-default input-default-select" type="text" autocomplete="off"> 
-                        <option>- Selecione</option>
-                    </select>
-                    <span class="label-error">Error</span>
+                <div class="flex flex-col form-group">
+                    <label>Bairro</label>
+                    <input required minlength="3" placeholder="Informe seu bairro" name="address_neighborhood" class="input-default" type="text" autocomplete="off" />
+                    <span name="address_neighborhood_label_error" class="label-error">Error</span>
                 </div>
-                <div class="flex flex-col form-group" style="width:50%;">
-                    <label>Cidade</label>
-                    <select  class="input-default input-default-select" type="text" autocomplete="off"> 
-                        <option>- Selecione</option>
-                    </select>
-                    <span class="label-error">Error</span>
+
+                <div class="flex" style="gap:5px;">
+                    <div class="flex flex-col form-group" style="width:50%;">
+                        <label>Estado</label>
+                        <select required class="input-default input-default-select" name="state" type="text" autocomplete="off"> 
+                            <option>- Selecione</option>
+                        </select>
+                        <span name="state_label_error" class="label-error">Error</span>
+                    </div>
+                    <div class="flex flex-col form-group" style="width:50%;">
+                        <label>Cidade</label>
+                        <select  required minlength="5"  class="input-default input-default-select" name="city" type="text" autocomplete="off"> 
+                            <option>- Selecione</option>
+                        </select>
+                        <span name="city_label_error"   class="label-error">Error</span>
+                    </div>
                 </div>
             </div>
 

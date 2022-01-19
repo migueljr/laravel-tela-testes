@@ -1,5 +1,5 @@
 
-<div style="display:flex;justify-content:center;">
+<div id="order-bump" class="flex" style="display:flex;justify-content:center;">
   <div id="slider" class="slider">
     <div class="wrapper">
       <div id="slides" class="slides">
@@ -65,14 +65,14 @@
         * { box-sizing: border-box; }
 
         :root {
-            --width: 650px;
+            --width: 620px;
             --height: 370px;
         }  
 
         @media (min-width: 768px) and (max-width: 1023px)
         {
             :root {
-                --width: 650px;
+                --width: 620px;
                 --height: 370px;
             }  
         }
@@ -261,7 +261,7 @@
         }
         
         document.querySelector('#map').children[index].style.backgroundColor = 'red'
-        console.log(index)
+        //console.log(index)
         
         function dragEnd (e) {
             posFinal = items.offsetLeft;

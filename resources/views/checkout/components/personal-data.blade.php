@@ -13,32 +13,32 @@
         <form>
             <div class="flex flex-col form-group">
                 <label>Primeiro Nome</label>
-                <input placeholder="Informe seu primeiro nome" class="input-default" type="text" autocomplete="off" />
-                <span class="label-error">Error</span>
+                <input required minlength='2' placeholder="Informe seu primeiro nome" name="first_name" class="input-default" type="text" autocomplete="off" />
+                <span name="first_name_label_error" class="label-error">Error</span>
             </div>
 
             <div class="flex flex-col form-group">
                 <label>Sobrenome</label>
-                <input placeholder="Informe seu sobrenome completo"  class="input-default" type="text" />
-                <span class="label-error">Error</span>
+                <input required minlength='2' placeholder="Informe seu sobrenome completo" name="last_name"  class="input-default" type="text" />
+                <span name="last_name_label_error" class="label-error">Error</span>
             </div>
 
             <div class="flex flex-col form-group">
                 <label>CPF</label>
-                <input onkeypress="mascara(this, cpf)" maxlength="14" placeholder="000.000.000-00"  class="input-default" type="text" />
-                <span class="label-error">Error</span>
+                <input required minlength='11' onkeypress="mascara(this, cpf)" maxlength="14" name="doc" placeholder="000.000.000-00"  class="input-default" type="text" />
+                <span name="doc_label_error" class="label-error">Error</span>
             </div>
 
             <div class="flex flex-col form-group">
                 <label>E-mail</label>
-                <input placeholder="Ex.: seu.e-mail@gmail.com"  class="input-default" type="text" />
-                <span class="label-error">Error</span>
+                <input required placeholder="Ex.: seu.e-mail@gmail.com"  name="email" class="input-default" type="text" />
+                <span name="email_label_error" class="label-error">Error</span>
             </div>
 
             <div class="flex flex-col form-group">
                 <label>Celular</label>
-                <input onkeypress="mascara(this, telefone)" maxlength="15" placeholder="(00) 00000-0000"  class="input-default" type="text" />
-                <span class="label-error">Error</span>
+                <input required minlength='11' onkeypress="mascara(this, telefone)" name="phone" maxlength="15" placeholder="(00) 00000-0000"  class="input-default" type="text" />
+                <span name="phone_label_error" class="label-error">Error</span>
             </div>
         </form>
     </div>

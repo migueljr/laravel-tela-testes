@@ -18,7 +18,7 @@
                     <span class="rounded" style="background-color:black;padding:4px;color:white;font-size:10px;position:absolute;margin-top:-25px;margin-left:0px;">10% de desconto</span> 
                     BOLETO BANCARIO
                 </span>
-            <span style="width:50%;font-size:10px;" class="flex justify-end">
+            <span style="width:50%;font-size:8px;" class="flex justify-end">
                 <span class="rounded" style="background-color:#F30168;padding:5px;color:white;">APROVAÇÂO IMEDIATA</span>
             </span>
         </div>
@@ -32,26 +32,27 @@
             </div>
 
             <div class="flex items-center" style="gap:5px;">
-                <img width="276" height="26" src="./images/cards.png" />
+                <img width="262" height="26" src="./images/cards.png" />
             </div>
 
 
             <form>
                 <div class="flex flex-col form-group">
                     <label>Nome igual consta em seu cartão</label>
-                    <input placeholder="Preencha o nome igual ao seu cartão" class="input-default"  type="text" autocomplete="off" />
+                    <input placeholder="Preencha o nome igual ao seu cartão" name="card_name" class="input-default"  type="text" autocomplete="off" />
                     <span class="label-error">Error</span>
                 </div>
 
                 <div class="flex flex-col form-group">
                     <label>CPF</label>
-                    <input onkeypress="mascara(this, cpf)" placeholder="000.000.000-00" maxlength="14" class="input-default" type="text" autocomplete="off" />
+                    <input name="card_doc" onkeypress="mascara(this, cpf)" placeholder="000.000.000-00" maxlength="14" class="input-default" type="text" autocomplete="off" />
                     <span class="label-error">Error</span>
                 </div>
 
                 <div class="flex flex-col form-group">
                     <label>Número do Cartão</label>
                     <input
+                        name="card_number"
                         onkeypress="mascara(this, card)" 
                         maxlength="19"
                         id="card-input"
@@ -67,45 +68,61 @@
                     <span class="label-error">Error</span>
                 </div>
 
-                <div class="flex" style="gap:10px;">
+                <div class="flex" style="gap:5px;">
                     <div class="flex flex-col form-group" style="width:30%;">
                         <label style="white-space:nowrap;">Validade (Mês/Ano):</label>
-                        <select  class="input-default input-default-select" type="text" autocomplete="off"> 
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                            <option>04</option>
+                        <select name="card_month"  class="input-default input-default-select" type="text" autocomplete="off"> 
+                            <option selected disabled value="null">--Selecione</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
                         </select>
                         <span class="label-error">Error</span>
                     </div>
                     <div class="flex flex-col form-group" style="width:40%;">
                         <label>.</label>
-                        <select  class="input-default input-default-select" type="text" autocomplete="off"> 
-                            <option>2022</option>
-                            <option>2023</option>
-                            <option>2024</option>
-                            <option>2025</option>
+                        <select name="card_year"  class="input-default input-default-select" type="text" autocomplete="off"> 
+                            <option selected disabled value="null">--Selecione</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
                         </select>
                         <span class="label-error">Error</span>
                     </div>
                     <div class="flex flex-col form-group" style="width:30%;">
                         <label>CVV:</label>
-                        <input  class="input-default" type="text" autocomplete="off"/> 
+                        <input name="cvv" class="input-default" type="text" autocomplete="off"/> 
                         <span class="label-error">Error</span>
                     </div>
                 </div>
 
                 <div class="flex flex-col form-group">
                     <label>Parcelas</label>
-                    <select  class="input-default input-default-select" type="text" autocomplete="off"> 
-                        <option>1 x R$32,00</option>
-                        <option>2 x R$18,00</option>
+                    <select name="card_installments" class="input-default input-default-select" type="text" autocomplete="off"> 
+                        <option value="1">1 x R$32,00</option>
+                        <option value="2">2 x R$18,00</option>
                     </select>
                     <span class="label-error">Error</span>
                 </div>
 
                 <div class="flex flex-col form-group">
-                    <button style="font-size:16px; background-color:#10C300;" class="btn-default"><b>PAGAR</b> 12 x de R$ 14,99</button>
+                    <button id="general-submit-button" style="font-size:16px; background-color:#10C300;" class="btn-default"><b>PAGAR</b> 12 x de R$ 14,99</button>
                 </div>
                 
             
@@ -139,7 +156,7 @@
         }
 
         document.querySelector('#card-input').addEventListener('keyup', ()=>{
-            console.log(testarCC(document.querySelector('#card-input').value, cartoes))
+            //console.log(testarCC(document.querySelector('#card-input').value, cartoes))
             if(testarCC(document.querySelector('#card-input').value)=='Visa'){
                 document.querySelector('#card-input').style.backgroundImage = 'url(./images/visa.png)'
             }else if(testarCC(document.querySelector('#card-input').value)=='Master'){

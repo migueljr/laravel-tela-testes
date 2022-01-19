@@ -78,11 +78,12 @@
                 padding:2px 20px;
                 color:black;
                 color:#666666;
+                width:100%;
                 /*background-color:#FEECEF;*/
             }
 
             .input-default-select{
-                height:46px !important;
+                height:40px !important;
                 background-color:white;
             }
             
@@ -99,6 +100,8 @@
                 display:none;
                 margin-left:1px;
                 margin-top:5px;
+                color: #ff6666;
+                font-size:13px;
             }
             
             .btn-default{
